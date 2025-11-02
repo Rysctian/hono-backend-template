@@ -1,0 +1,58 @@
+
+
+GET http://localhost:3000/users
+
+###
+
+GET http://localhost:3000/users/9x2aZXQNdS4tCTz8DoPX4jdssAa26oMa3
+###
+DELETE http://localhost:3000/users/2
+###
+POST http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "name": "cefdcsfa",
+    "email": "creyes33@gmail.com",
+    "age" : 20
+}
+
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+Authorization: Bearer 32313
+{
+    "name": "Christian",
+    "age" : 23
+}
+### UPDATE user
+
+PUT http://localhost:3000/user/9x2aZXQNdS4tCTz8DoPX4jdssAa26oMa
+Content-Type: application/json
+
+{
+    "name": "Christian Reyes",
+    "email" : "crreyes@gmail.com"
+}
+
+
+### sign in  email
+POST http://localhost:3000/api/auth/sign-in/email
+
+{
+  "name": "christian",
+  "email": "ryschristian.30@gmail.com",
+  "password": "password123",
+  "image": "",
+  "callbackURL": "",
+  "rememberMe": true
+}
+
+### sign in  email
+http://localhost:3000/api/auth/sign-in/email
+Content-Type: application/json
+{
+  "email": "crreyes@gmail.com",
+  "password": "password123"
+}
